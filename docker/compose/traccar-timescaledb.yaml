@@ -6,7 +6,7 @@ services:
     environment:
       POSTGRES_DB: traccar
       POSTGRES_USER: traccar
-      POSTGRES_PASSWORD: traccar
+      POSTGRES_PASSWORD: Traccar!@#$3412
       TIMESCALEDB_TELEMETRY: "off"
     volumes:
       - /opt/traccar/data:/var/lib/postgresql/data
@@ -21,7 +21,7 @@ services:
       DATABASE_DRIVER: org.postgresql.Driver
       DATABASE_URL: jdbc:postgresql://database:5432/traccar
       DATABASE_USER: traccar
-      DATABASE_PASSWORD: traccar
+      DATABASE_PASSWORD: Traccar!@#$3412
     healthcheck:
       test: [ "CMD", "wget", "-q", "--spider", "http://localhost:8082/api/health" ]
       interval: 2m
